@@ -23,18 +23,27 @@
         android:id="@+id/ImageView"
         android:src="@drawable/hydrangeas"
         />
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_below="@id/ImageView"
-        android:id="@+id/btNextImage"
-        android:text="다음이미지"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageView"
+            android:id="@+id/btPrevImage"
+            android:text="이전이미지"
+            />
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageView"
+            android:id="@+id/btNextImage"
+            android:text="다음이미지"
         />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ImageView"
-        android:id="@+id/btPrevImage"
-        android:text="이전이미지"
-        />
+    </LinearLayout>
+
 </RelativeLayout>
